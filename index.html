@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+  <body m-0 p-0>
+    <div class="box bg-[url(mountain.jpg)] bg-cover w-screen relative">
+      <div class="wrapper flex">
+        <div
+          class="leftnav rounded-4xl p-6 h-screen flex items-center justify-center"
+        >
+          <div
+            class="sidebar b bg-[rgb(255,255,255,0.4)] flex flex-col space-y-4 rounded-full p-3 backdrop-blur-2xl border-t-1 border-l-1 border-white/50"
+          >
+            <i
+              class="fa-solid fa-home text-2xl text-white hover:border-2 hover:rounded-2xl hover:bg-red-500 hover:p-1 transition-all duration-300"
+            ></i>
+            <i
+              class="fa-solid fa-user text-2xl text-white hover:border-2 hover:rounded-2xl hover:bg-red-500 hover:p-1 transition-all duration-300"
+            ></i>
+            <i
+              class="fa-solid fa-envelope text-2xl text-white hover:border-2 hover:rounded-2xl hover:bg-red-500 hover:p-1 transition-all duration-300"
+            ></i>
+            <i
+              class="fa-solid fa-bell text-2xl text-white hover:border-2 hover:rounded-2xl hover:bg-red-500 hover:p-1 transition-all duration-300"
+            ></i>
+            <i
+              class="fa-solid fa-cog text-2xl text-white hover:border-2 hover:rounded-2xl hover:bg-red-500 hover:p-1 transition-all duration-300"
+            ></i>
+            <i
+              class="fa-solid fa-sign-out-alt text-2xl text-white hover:border-2 hover:rounded-2xl hover:bg-red-500 hover:p-1 transition-all duration-300"
+            ></i>
+          </div>
+        </div>
+        <div
+          class="main my-8 mr-8 w-full grid grid-cols-5 bg-white/50 backdrop-blur-md rounded-2xl border-t-1 border-l-1 border-white/50"
+        >
+          <div class="lcol flex flex-col justify-around ml-2">
+            <div class="logo flex-1">
+              <img src="src/Logonetflix.png" alt="" />
+            </div>
+            <div class="Selection_Menu flex flex-col flex-1 space-y-6">
+              <i class="fa-solid fa-magnifying-glass text-red-500"
+                ><span class="ml-1 text-white">Browse</span></i
+              >
+              <i class="fa-solid fa-list text-red-500"
+                ><span class="ml-1 text-white">Wishlist</span></i
+              >
+              <i class="fa-solid fa-calendar-days text-red-500"
+                ><span class="ml-1 text-white">Coming Soon</span></i
+              >
+            </div>
+            <div class="New_Trailers flex-2">
+              <h1 class="fa-solid fa fa-fire text-2xl text-red-600 mb-2">
+                <span class="text-white">New Trailers</span>
+              </h1>
+              <div class="new_trailer_cards flex flex-col mb-2">
+                <div class="flex flex-col space-y-4">
+                  <div
+                    class="bg-[url(witcher.jpg)] rounded-xl items-center shadow-md flex flex-col-reverse mt-2 mx-2 bg-cover bg-center h-35 overflow-hidden"
+                  >
+                    <div
+                      class="bg-white/50 backdrop-blur-md w-full flex items-center justify-center p-2"
+                    >
+                      <div class="font-semibold text-white">The Witcher</div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-[url(stranger.webp)] rounded-xl items-center shadow-md flex flex-col-reverse mt-2 mx-2 bg-cover h-35 bg-center overflow-hidden"
+                  >
+                    <div
+                      class="bg-white/50 backdrop-blur-md w-full flex items-center justify-center p-2"
+                    >
+                      <div class="font-semibold text-white">
+                        Stranger Things
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-[url(money.jpg)] rounded-xl flex items-center shadow-md flex-col-reverse mt-2 mx-2 h-35 bg-cover overflow-hidden"
+                  >
+                    <div
+                      class="bg-white/50 backdrop-blur-md w-full flex items-center justify-center p-2"
+                    >
+                      <div class="font-semibold text-white">Money Heist</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rcol col-span-4 bg-white/10 bordr-l-1 border-white/20">
+            <div class="content_right grid grid-rows-8 h-full w-full">
+              <div class="row-span-1 flex items-center justify-between mx-4">
+                <div class="flex-2">
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    class="w-full px-4 py-2 rounded-full bg-white/70 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-md"
+                  />
+                </div>
+                <div class="flex">
+                  <div class="flex items-center space-x-4">
+                    <div class="relative">
+                      <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 shadow-md"
+                      >
+                        <i class="fa-solid fa-bell text-gray-500 text-xl"></i>
+                      </div>
+                      <span
+                        class="absolute top-1 right-1 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-white bg-red-600 rounded-full"
+                        >3</span
+                      >
+                    </div>
+
+                    <div
+                      class="flex items-center bg-white/80 rounded-full px-3 py-1 shadow-md"
+                    >
+                      <img
+                        src="profile.jpg"
+                        alt="Profile"
+                        class="w-8 h-8 rounded-full object-cover"
+                      />
+                      <span class="ml-2 text-gray-700 font-medium">Luis</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-span-3 mx-4">
+                <div
+                  class="bg-[url(thumbnail.jpg)] card w-[100%] h-[100%] rounded-2xl overflow-hidden bg-cover relative"
+                >
+                  <div
+                    class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"
+                  ></div>
+
+                  <div class="absolute bottom-6 left-6 z-10">
+                    <h1
+                      class="text-white text-5xl font-bold mb-2 leading-tight"
+                    >
+                      PEAKY<br />BLINDERS
+                    </h1>
+                    <p class="text-gray-300 text-sm mb-4">
+                      2013 • Drama • 5 Seasons
+                    </p>
+
+                    <div class="flex space-x-3">
+                      <button
+                        class="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                      >
+                        Watch
+                      </button>
+                      <button
+                        class="bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-lg hover:bg-white/30 transition-colors border border-white/20"
+                      >
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="absolute bottom-6 right-6 flex space-x-2">
+                    <div
+                      class="w-16 h-12 rounded-lg overflow-hidden border-2 border-white/50 hover:scale-110 transition-transform cursor-pointer"
+                    >
+                      <img
+                        src="thumbnail1.jpg"
+                        alt="Scene"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div
+                      class="w-16 h-12 rounded-lg overflow-hidden border-2 border-white/50 hover:scale-110 transition-transform cursor-pointer"
+                    >
+                      <img
+                        src="thumbnail2.jpg"
+                        alt="Scene"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-span-2 mt-2">
+                <h2 class="ml-2 font-bold text-white">Popcorn Mania</h2>
+                <div class="flex gap-2 mt-2 mx-4 h-48">
+                  <div
+                    class="card_1 bg-[url(dragon.webp)] flex-1 bg-cover bg-center rounded-2xl relative"
+                  >
+                    <div class="absolute bottom-6 left-6">
+                      <h3 class="text-white">Dragon Ball</h3>
+                      <p class="text-white text-sm mb-1">
+                        2020 - action - 7 Seasons
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="card_2 bg-[url(myhero.jpg)] flex-1 bg-cover bg-center rounded-2xl relative"
+                  >
+                    <div class="absolute bottom-6 left-6">
+                      <h3 class="text-white">My Hero</h3>
+                      <p class="text-white text-sm mb-1">
+                        2020 - action - 7 Seasons
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="card_3 bg-[url(naruto.avif)] flex-1 bg-cover bg-center rounded-2xl relative"
+                  >
+                    <div class="absolute bottom-6 left-6">
+                      <h3 class="text-white">Naruto</h3>
+                      <p class="text-white text-sm mb-1">
+                        2020 - action - 7 Seasons
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="card_4 bg-[url(demonslayer.jpeg)] flex-1 bg-cover bg-center rounded-2xl relative"
+                  >
+                    <div class="absolute bottom-6 left-6">
+                      <h3 class="text-white">Demon Slayer</h3>
+                      <p class="text-white text-sm mb-1">
+                        2020 - action - 7 Seasons
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-span-2 mt-2 ml-2">
+                <div class="font-bold text-white">Continue Watching</div>
+                <div class="flex gap-2 mt-2 mx-4 h-35">
+                  <div
+                    class="bg-[url(thumbnail.jpg)] flex-1 bg-cover bg-center rounded-2xl"
+                  ></div>
+                  <div
+                    class="bg-[url(thumbnail.jpg)] flex-1 bg-cover bg-center rounded-2xl"
+                  ></div>
+                  <div
+                    class="bg-[url(thumbnail.jpg)] flex-1 bg-cover bg-center rounded-2xl"
+                  ></div>
+                  <div
+                    class="bg-[url(thumbnail.jpg)] flex-1 bg-cover bg-center rounded-2xl"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
